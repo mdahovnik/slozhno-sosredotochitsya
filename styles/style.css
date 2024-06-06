@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  padding: 10px;
+  /* padding: 10px; */
   color: var(--accent-color);
   background-image: url(/images/cover-image-dark.png);
   background-color: var(--main-color);
@@ -21,7 +21,8 @@
 }
 
 .decorated-zone {
-  min-block-size: 97vh;
+  min-block-size: 100vh;
+  padding: 10px;
 }
 
 .decorated-zone::before {
@@ -31,25 +32,28 @@
   position: absolute;
   border-top: 1px solid var(--decoration-color);
   border-right: 1px solid var(--decoration-color);
-  inset-inline-end: 0;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 .decorated-zone::after {
   content: '';
   position: absolute;
-  inset-block-end: 0;
   inline-size: 25px;
   block-size: 25px;
   border-bottom: 1px solid var(--decoration-color);
   border-left: 1px solid var(--decoration-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .decor-element {
   position: absolute;
   display: flex;
-  align-items: center;
-  inset-inline-end: 9px;
   gap: 10px;
+  align-items: center;
+  inset-inline-end: 19px;
+  inset-block-start: 10px;
 }
 
 .decor-element::before {
@@ -134,7 +138,7 @@
 .main {
   display: grid;
   gap: 50px;
-  margin: 50px 0;
+  margin: 40px 10px;
 }
 
 .section {
