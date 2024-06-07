@@ -18,6 +18,7 @@
   --text-decor-color: #353430;
   --shadow-color: #ff8dcb;
   --button-color: #353430;
+  --backgroundg-color: #FFF1F7;
   --theme-cover: url(/images/cover-image-light.png);
 }
 
@@ -33,6 +34,7 @@
     --text-decor-color: #353430;
     --shadow-color: #ff8dcb;
     --button-color: #353430;
+    --backgroundg-color: #FFF1F7;
     --theme-cover: url(/images/cover-image-light.png);
   }
 }
