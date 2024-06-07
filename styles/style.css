@@ -3,9 +3,9 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   /* padding: 10px; */
-  color: var(--dt-font-color);
-  background-image: url(/images/cover-image-dark.png);
-  background-color: var(--dt-backgroundg-color);
+  color: var(--font-color);
+  background-image: var(--theme-cover);
+  background-color: var(--backgroundg-color);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,7 +18,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: auto max-content auto;
+  grid-template-rows: 1fr max-content 1fr;
 }
 
 .decorated-zone {
@@ -31,8 +31,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--dt-accent-color);
-  border-right: 1px solid var(--dt-accent-color);
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
   inset-inline-end: var(--padding);
   inset-block-start: var(--padding);
 }
@@ -42,8 +42,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--dt-accent-color);
-  border-left: 1px solid var(--dt-accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
   inset-inline-start: var(--padding);
   inset-block-end: var(--padding);
 }
@@ -59,17 +59,17 @@
 
 .decor-element::before {
   content: 'REC';
-  color: var(--dt-accent-color);
+  color: var(--accent-color);
   line-height: 139%;
 }
 
 .decor-element::after {
   content: '';
-  background-color: var(--dt-accent-color);
+  background-color: var(--accent-color);
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  box-shadow: 0 0 4px 2px var(--dt-accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -89,7 +89,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  color: var(--dt-accent-color);
+  color: var(--button-color);
   padding: 0 13px;
   font-family: 'IBM Plex Mono';
   font-size: 18px;
@@ -106,41 +106,25 @@
 } */
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--dt-accent-color);
+  outline: 1px solid var(--button-color);
 }
 
 .title {
   position: relative;
-  inset-block-start: 6px;
-  color: var(--dark-title-color);
-  text-shadow: 4px 4px 0 var(--dt-accent-color);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
-  line-height: 82.5%; /* 95.7px */
+  line-height: 82.5%;
 }
-/* 
-@media (min-width:768px){
-
-  .title{
-    inset-inline-start: -20px;
-  }
-} */
 
 .header__content {
   align-self: center;
 }
 
-/* @media (min-width:768px){
-
-  .header__content{
-    max-inline-size: 50%;
-    justify-self: end;
-  }
-} */
-
 .title-decor {
-  background-color: var(--dt-accent-color);
-  color: #000028;
+  background-color: var(--accent-color);
+  color: var(--title-decor-color);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   font-style: normal;
@@ -149,8 +133,12 @@
 }
 
 .text-link {
-  text-shadow: 1px 1px var(--dt-accent-color);
+  text-shadow: 1px 1px var(--shadow-color);
   text-decoration: none;
+}
+
+.text-link:hover {
+  outline: 1px solid;
 }
 
 .main {
@@ -163,35 +151,19 @@
   display: grid;
 }
 
-/* @media (min-width:768px){
-
-  .section:nth-child(1), 
-  .section:nth-child(3){
-    grid-template-columns: 236px 1fr;
-    gap: 20px;
-  }
-} */
-
 .section__content {
   margin-bottom: 20px;
 }
 
 .section__title {
   margin-bottom: 20px;
-  color: var(--dt-accent-color);
+  color: var(--section-title-color);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
 }
-
-/* @media (min-width:768px){
-
-  .section__title{
-
-  }
-} */
 
 .section__article-list {
   display: grid;
@@ -207,8 +179,8 @@
 }
 
 .text-decor {
-  background-color: var(--dt-accent-color);
-  color: var(--dt-color);
+  background-color: var(--accent-color);
+  color: var(--text-decor-color);
 }
 
 .margin {
@@ -236,7 +208,7 @@
 .footer__title {
   align-self: center;
   justify-self: center;
-  text-shadow: 2px 2px 0 var(--dt-accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (min-width: 768px) {
@@ -247,6 +219,7 @@
 
   .title {
     inset-inline-start: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .section__title {
@@ -265,7 +238,7 @@
 
   .section:nth-child(1),
   .section:nth-child(3) {
-    grid-template-columns: 236px 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 20px;
   }
 
@@ -292,5 +265,26 @@
   .section__image-list-item:nth-child(5) {
     grid-column: 2/4;
     grid-row: 3/4;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .section__title {
+    max-inline-size: 315px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .section:nth-child(2) .section__article-list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
