@@ -4,7 +4,19 @@
 */
 
 :root {
-  --main-color: #000028;
-  --accent-color: #f1b2ce;
-  --decoration-color: #ff0070;
+  /* dark theme colors */
+  --dt-color: #000028;
+  --dt-font-color: #f1b2ce;
+  --dt-accent-color: #ff0070;
+  --dark-title-color: #db00ff;
+
+  /* lite theme colors */
+  --lt-color: #fff1f7;
+  --lt-font-color: #353430;
+  --lt-accent-color: #ff8dcb;
+  --lt-title-color: #ffc2e6;
+
+  /* images */
+  --dark-theme-cover: url(/images/cover-image-dark.png);
+  --lite-theme-cover: url(/images/cover-image-light.png);
 }
