@@ -18,7 +18,10 @@
   --text-decor-color: #353430;
   --shadow-color: #ff8dcb;
   --button-color: #353430;
+  --button-border-hover: #35343040;
   --backgroundg-color: #FFF1F7;
+  --rec-element-color: transparent;
+  --angle-element-color: #353430;
   --theme-cover: url(/images/cover-image-light.png);
 }
 
@@ -34,7 +37,11 @@
     --text-decor-color: #353430;
     --shadow-color: #ff8dcb;
     --button-color: #353430;
+    --button-border-hover: #35343040;
     --backgroundg-color: #FFF1F7;
+    --rec-element-color:#ff0070;
+    --rec-element-color: transparent;
+    --angle-element-color: #353430;
     --theme-cover: url(/images/cover-image-light.png);
   }
 }
