@@ -80,7 +80,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -166,10 +166,6 @@
   display: grid;
 }
 
-.section__content {
-  margin-bottom: 20px;
-}
-
 .section__title {
   margin-bottom: 20px;
   color: var(--section-title-color);
@@ -183,11 +179,11 @@
   gap: 20px;
 }
 
-.article__title {
+.subtitle {
   margin-bottom: 10px;
 }
 
-.article__content {
+.text {
   line-height: 130%;
 }
 
@@ -233,14 +229,14 @@
   .title_position {
     inset-inline-start: -20px;
   }
+  
+    .header__text {
+      max-inline-size: 50%;
+      justify-self: end;
+    }
 
   .section__title {
     max-inline-size: 236px;
-  }
-
-  .header__content {
-    max-inline-size: 50%;
-    justify-self: end;
   }
 
   .main {
