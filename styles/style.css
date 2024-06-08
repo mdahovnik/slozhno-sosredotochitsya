@@ -13,6 +13,7 @@
   font-weight: 400;
   font-size: 18px;
   --padding: 10px;
+  transition: all 0.3s ease-out;
 }
 
 .header {
@@ -88,21 +89,17 @@
   block-size: 26px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   color: var(--button-color);
   padding: 0 13px;
   line-height: 100%;
   background: transparent;
-  border: 1px solid transparent;
+  border: none;
   text-transform: lowercase;
   cursor: pointer;
 }
 
-@media (hover: hover) {
-
-  .header__theme-menu-button:hover {
-    border: 1px solid var(--button-border-hover);
-  }
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-border-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -114,7 +111,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--button-color);
+  outline: 1px solid var(--button-color);
   pointer-events: none;
 }
 
@@ -216,7 +213,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
 
   .page {
     --padding: 20px;
@@ -276,7 +273,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
 
   .section__title {
     max-inline-size: 315px;
