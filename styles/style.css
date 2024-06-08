@@ -106,7 +106,7 @@
   outline: 1px solid var(--button-border-hover);
 }
 
-.header__theme-menu-button:focus{
+.header__theme-menu-button:focus {
   outline: transparent;
 }
 

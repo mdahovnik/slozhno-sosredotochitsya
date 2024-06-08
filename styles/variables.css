@@ -4,7 +4,6 @@
 */
 
 :root {
-  
   --color: #000028;
   --font-color: #f1b2ce;
   --section-title-color: #ff0070;
@@ -16,11 +15,10 @@
   --button-color: #ff0070;
   --button-border-hover: #ff007040;
   --backgroundg-color: #000028;
-  --rec-element-color:#ff0070;
+  --rec-element-color: #ff0070;
   --angle-element-color: #ff0070;
   --theme-cover: url(/images/cover-image-dark.png);
 }
-
 
 /* --color: #000028;
 --font-color: #f1b2ce;
