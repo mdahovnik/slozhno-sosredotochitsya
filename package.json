@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "prettier --check './**/*.{html,css,js}'",
     "format": "prettier --write './**/*.{html,css,js}'",
+    "cf": "npm run check && npm run format",
     "lint": "stylelint **/*.css",
-    "lintfix": "stylelint **/*.css --fix"
+    "lintfix": "stylelint **/*.css --fix",
+    "ll": "npm run lint && npm run lintfix"
   },
   "repository": {
     "type": "git",
