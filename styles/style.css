@@ -53,8 +53,8 @@
 .decor-element {
   position: absolute;
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
   inset-inline-end: calc(9px + var(--padding));
   inset-block-start: var(--padding);
 }
@@ -258,7 +258,6 @@
   .section__image-list {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    margin-block-start: 10px;
   }
 
   .section__image-list-item:nth-child(1) {
