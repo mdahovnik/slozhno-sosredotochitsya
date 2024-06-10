@@ -182,8 +182,8 @@
   margin-block-end: 10px;
 }
 
-.article{
-  display:flex;
+.article {
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
