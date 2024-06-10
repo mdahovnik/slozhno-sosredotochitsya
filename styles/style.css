@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: 'IBM Plex mono', monospace;
   font-weight: normal;
   font-size: 18px;
   --padding: 10px;
@@ -23,7 +23,8 @@
 }
 
 .decorated-zone {
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: var(--padding);
 }
 
@@ -59,7 +60,8 @@
 }
 
 .decor-element::before {
-  content: 'REC';
+  content: 'rec';
+  text-transform: uppercase;
   color: var(--rec-element-color);
   line-height: 139%;
 }
@@ -178,6 +180,12 @@
 
 .subtitle {
   margin-block-end: 10px;
+}
+
+.article{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .text {

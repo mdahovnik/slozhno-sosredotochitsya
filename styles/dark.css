@@ -22,7 +22,7 @@
   --button-border-hover: #ff007040;
   --rec-element-color: #ff0070;
   --angle-element-color: #ff0070;
-  --theme-cover: url(/images/cover-image-dark.png);
+  --theme-cover: url(../images/cover-image-dark.png);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +41,6 @@
     --backgroundg-color: #000028;
     --rec-element-color: #ff0070;
     --angle-element-color: #ff0070;
-    --theme-cover: url(/images/cover-image-dark.png);
+    --theme-cover: url(../images/cover-image-dark.png);
   }
 }

@@ -22,7 +22,7 @@
   --backgroundg-color: #fff1f7;
   --rec-element-color: transparent;
   --angle-element-color: #353430;
-  --theme-cover: url(/images/cover-image-light.png);
+  --theme-cover: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,6 +42,6 @@
     --rec-element-color: #ff0070;
     --rec-element-color: transparent;
     --angle-element-color: #353430;
-    --theme-cover: url(/images/cover-image-light.png);
+    --theme-cover: url(../images/cover-image-light.png);
   }
 }
