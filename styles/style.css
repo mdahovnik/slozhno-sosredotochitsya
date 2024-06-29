@@ -253,7 +253,7 @@
 
   .section:nth-child(1),
   .section:nth-child(3) {
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 20px;
   }
 
