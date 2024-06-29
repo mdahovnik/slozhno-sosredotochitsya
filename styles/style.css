@@ -19,7 +19,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr max-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .decorated-zone {
@@ -136,6 +136,7 @@
 
 .header__text {
   align-self: center;
+  min-block-size: 117px;
 }
 
 .text-link {
@@ -237,6 +238,7 @@
 
   .header__text {
     max-inline-size: 50%;
+    min-block-size: min-content;
     justify-self: end;
   }
 
@@ -251,12 +253,12 @@
 
   .section:nth-child(1),
   .section:nth-child(3) {
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: min-content 1fr;
     gap: 20px;
   }
 
   .section__image-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
